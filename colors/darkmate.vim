@@ -63,7 +63,7 @@ hi Folded		guibg=#000000 guifg=#FFFFFF gui=bold
 hi vimFold		guibg=#000000 guifg=#FFFFFF gui=bold
 hi FoldColumn	guibg=#000000 guifg=#FFFFFF gui=bold
 
-exe 'hi LineNr		guifg=' . s:asfalto . ' guibg=' . s:gray
+exe 'hi LineNr		guifg=' . s:asfalto . ' guibg=' . s:carbon
 hi NonText		guifg=#535353 guibg=#202020
 hi Folded		guifg=#535353 guibg=#202020 gui=bold
 hi FoldeColumn  guifg=#535353 guibg=#202020 gui=bold
