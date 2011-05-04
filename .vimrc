@@ -35,6 +35,8 @@ set shiftwidth=4            " but an indent level is 2 spaces wide.
 set softtabstop=4           " <BS> over an autoindent deletes both spaces.
 set expandtab               " Use spaces, not tabs, for autoindent/tab key.
 set shiftround              " rounds indent to a multiple of shiftwidth
+set autoindent              " Keep indentation level from previous line
+set textwidth=79            " 
 
 """" Command Line
 set history=1000            " Keep a very long command-line history.
@@ -63,8 +65,6 @@ let python_highlight_all=1
 syntax on
 " Automatically indent based on file type
 filetype indent on
-" Keep indentation level from previous line
-set autoindent
 " Folding based on indentation
 set foldmethod=indent
 " Wrap text after a certain number of characters
@@ -91,3 +91,9 @@ colorscheme darkmate
 "Invisible character colors
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
+
+"autocmd BufWritePre *.py normal m`:%s/\s\+$//e ``  " Trim Trailing Whitespace
+
+""" TABS navigation after :tabnew opens up a file in a new tab
+" map <silent><A-Right> :tabnext<CR>       " :tabn
+" map <silent><A-Left> :tabprevious<CR>    " :tabp
