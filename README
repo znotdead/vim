@@ -1,0 +1,26 @@
+omni complition Ctrl+x Ctrl+o
+snippets Tab
+:NERDtree
+
+snipmate
+taglist
+folding
+pydoc
+ipdb
+tasklist
+nerdtree
+snippets
+syntax
+fast open
+
+installed exuberant-ctags -> TT, F4 = TlistToggle
+F - toggle all, f-toggle folding only here
+:TaskList
+
+
+# Check Python code
+:!pep8 %
+:!pyflakes %
+:!pylint %
+
+\pw - pydoc

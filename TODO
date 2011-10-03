@@ -1,0 +1,52 @@
+
+
+Modern GUI VIM implementations like GVIM or MacVIM give the user the opportunity to organize their open files in tabs. This might look convenient, but to me it is rather bad practice, because a second tab will not be in the in the same buffer scope as the first one which takes away from future interaction options between the two. Using MiniBufExplorer, however, gives the user tabs(not only in the GUI, but also in command line) and leaves the classic buffer interaction intact.
+
+MiniBuf Explorer
+
+Being able to neatly work on multiple files, the user still misses the potential his favourite IDE gives him in visualizing classes, functions and variables. Luckily there are quite a few plugins around to accomplish this task just as well. My favourite one would be TagList. TagList uses Exuberant Ctags for actually generating the tags(note: it really relies on this specific version of ctags – preinstalled implementations on UNIX systems won’t work).
+
+TagList
+
+
+
+Probably the most wanted feature(besides code completion) is debugging graphically. VimPDB is a plugin that lets you do just that(. I acknowledge it is no complete substitution for a full fledged graphical debugger, but I honour the thought that having to rely on a debugger (often), is a hint of bad design.
+
+VimPDB
+
+–
+
+From the eye-candy to the implementation. Don’t worry, it’s no sorcery.
+
+
+Now, let’s start with the MiniBufExplorer. Get it and copy it into your plugin directory. To start it automatically when needed and be able to use it with keyboard and mouse commands, append these lines in your vimrc configuration:
+
+let g:miniBufExplMapWindowNavVim = 1
+let g:miniBufExplMapWindowNavArrows = 1
+let g:miniBufExplMapCTabSwitchBufs = 1
+let g:miniBufExplModSelTarget = 1
+
+For a project view, get TagList and Exuberant Ctags. To install Ctags, unpack it, go into the directory and do a compile/install via:
+
+./configure && sudo make install
+
+Ctags will then be installed in /usr/local/bin. When using a Windows machine, I recommend Cygwin with GCC and Make; it’ll work just fine. If you don’t want to tamper with your original ctags installation, you can propagate the location to VIM by appending the following line to vimrc:
+
+let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
+
+To install TagList, just drop it into VIMs plugin directory. You will now be able to use the project view by typing the command :TlistToggle.
+
+Tasklist is a simple plugin, too. Copying it into the plugin directory will suffice. I like to have shortcuts and have added
+
+map T :TaskList<CR>
+map P :TlistToggle<CR>
+
+to vimrc. Pressing T will then open the TaskList if there are any tasks to process. q quits the TaskList again.
+
+VimPDB is a plugin, as well. Install as before and see the readme for documentation. If it doesn’t work out of the box, watch for the known issues.
+
+
+
+
+
+

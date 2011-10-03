@@ -97,7 +97,8 @@ highlight SpecialKey guifg=#4a4a59
 """ TABS navigation after :tabnew opens up a file in a new tab
 " map <silent><A-Right> :tabnext<CR>       " :tabn
 " map <silent><A-Left> :tabprevious<CR>    " :tabp
-
+" Execute file being edited with <Shift> + e:
+map <buffer> <S-e> :w<CR>:!/usr/bin/env python % <CR>
 
 " Taglist variables
 " Display function name in status bar:
@@ -115,3 +116,6 @@ let Tlist_Compact_Format = 1
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_GainFocus_On_ToggleOpen = 1
 let Tlist_File_Fold_Auto_Close = 1
+
+""" PYDOC path
+ let g:pydoc_cmd=/usr/bin/pydoc
