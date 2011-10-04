@@ -24,3 +24,8 @@ F - toggle all, f-toggle folding only here
 :!pylint %
 
 \pw - pydoc
+
+
+NERDTREE:
+F9 - run NerdTree on path /mnt/admitad/var/www/
+q - close

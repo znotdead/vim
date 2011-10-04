@@ -119,3 +119,12 @@ let Tlist_File_Fold_Auto_Close = 1
 
 """ PYDOC path
  let g:pydoc_cmd=/usr/bin/pydoc
+ 
+ 
+ " ------------------------------------------------------------------------------
+" NERDTree Settings
+" ------------------------------------------------------------------------------
+" Hide python cache files (.pyc) in NERDTree
+let NERDTreeIgnore=['\.pyc']
+" open NERDTree with start directory
+nnoremap <F9> :NERDTree /mnt/admitad/var/www/<CR>
