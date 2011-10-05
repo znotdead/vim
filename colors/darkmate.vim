@@ -85,7 +85,7 @@ hi Title		guifg=#ef5939
 hi WarningMsg	guifg=#ef5939
 exe 'hi Number		guifg=' . s:alga
 
-exe 'hi MatchParen	guibg=' . s:white . ' guifg= ' . s:purple
+exe 'hi MatchParen	guibg=' . s:carbon . ' guifg= ' . s:aqua
 exe 'hi Comment		guifg=' . s:purple
 exe 'hi Constant	guifg=' . s:yellow . ' gui=none'
 exe 'hi String		guifg=' . s:lime
