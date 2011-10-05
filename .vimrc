@@ -133,7 +133,7 @@ let Tlist_File_Fold_Auto_Close = 1
 " Hide python cache files (.pyc) in NERDTree
 let NERDTreeIgnore=['\.pyc']
 " open NERDTree with start directory
-nnoremap <F9> :NERDTreeToggle /mnt/admitad/var/www/<CR>
+nnoremap <F9> :NERDTreeToggle ~/projects/<CR>
 let NERDTreeShowBookmarks=1
 
 " Delete buffer while keeping window layout (don't close buffer's windows).

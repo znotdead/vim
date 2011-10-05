@@ -18,6 +18,7 @@ installed exuberant-ctags -> TT, F4 = TlistToggle
 :! command in shell
 :noh - clear selection after search
 Shift + e - execute python file
+* - highlight matched words under cursor
 
 -----------------
 Buffers
