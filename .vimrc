@@ -121,10 +121,23 @@ let Tlist_File_Fold_Auto_Close = 1
  let g:pydoc_cmd=/usr/bin/pydoc
  
  
- " ------------------------------------------------------------------------------
+" ------------------------------------------------------------------------------
 " NERDTree Settings
 " ------------------------------------------------------------------------------
 " Hide python cache files (.pyc) in NERDTree
 let NERDTreeIgnore=['\.pyc']
 " open NERDTree with start directory
 nnoremap <F9> :NERDTreeToggle /mnt/admitad/var/www/<CR>
+
+"-------------------------------------------------------------------------------
+" unimpaired
+"-------------------------------------------------------------------------------
+" Text movimg with plugin unimpaired.vim
+" Bubble single lines
+
+nmap <M-Up> [e
+nmap <M-Down> ]e
+
+" Bubble multiple lines
+vmap <M-Up> [egv
+vmap <M-Down> ]egv
