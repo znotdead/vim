@@ -17,7 +17,7 @@ set background=dark
 
 " show a line at column 79
 if exists("&colorcolumn")
-    set colorcolumn=79
+    set colorcolumn=100
 endif
 
 """" Messages, Info, Status
@@ -127,4 +127,4 @@ let Tlist_File_Fold_Auto_Close = 1
 " Hide python cache files (.pyc) in NERDTree
 let NERDTreeIgnore=['\.pyc']
 " open NERDTree with start directory
-nnoremap <F9> :NERDTree /mnt/admitad/var/www/<CR>
+nnoremap <F9> :NERDTreeToggle /mnt/admitad/var/www/<CR>

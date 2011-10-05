@@ -27,5 +27,6 @@ F - toggle all, f-toggle folding only here
 
 
 NERDTREE:
-F9 - run NerdTree on path /mnt/admitad/var/www/
+F9 - open or hide NerdTree on path /mnt/admitad/var/www/
 q - close
+m - on file/dir to copy/dell/add child node/move
