@@ -16,7 +16,7 @@ installed exuberant-ctags -> TT, F4 = TlistToggle
 |   HELP   |
 ------------
 :! command in shell
-FIXME   clear selection after search
+:noh - clear selection after search
 
 -----------------
 Buffers
@@ -65,3 +65,11 @@ Indentation
 unimpaired
 --------------
 Alt + arrows - moves lines
+
+
+
+----------------
+Leader button <,>
+----------------
+:noh or ,<space> - clear selection after search
+FIXME: how to use leader
