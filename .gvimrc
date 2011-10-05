@@ -5,6 +5,9 @@ set guioptions-=T
 cmap <S-Insert>     <C-R>+
 exe 'inoremap <script> <S-Insert>' paste#paste_cmd['i']
 
+" CTRL+S saves the buffer
+nmap <C-s> :w<CR>
+
 " right margin ruller
 if has("colorcolumn")
     set colorcolumn=100
