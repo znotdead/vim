@@ -17,6 +17,7 @@ installed exuberant-ctags -> TT, F4 = TlistToggle
 ------------
 :! command in shell
 :noh - clear selection after search
+Shift + e - execute python file
 
 -----------------
 Buffers
@@ -72,4 +73,4 @@ Alt + arrows - moves lines
 Leader button <,>
 ----------------
 :noh or ,<space> - clear selection after search
-FIXME: how to use leader
+

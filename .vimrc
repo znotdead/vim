@@ -6,9 +6,8 @@ set ignorecase              " Default to using case insensitive searches,
 set smartcase               " unless uppercase letters are used in the regex.
 set hlsearch                " Highlight searches by default.
 set incsearch               " Incrementally search while typing a /regex
-nnoremap <leader><space> :noh<cr>  " Empty highlight after search by leader - space
 
-"""" Folding
+""" Folding
 set foldmethod=indent       " By default, use syntax to determine folds
 set foldlevelstart=99       " All folds open by default
 
@@ -21,7 +20,7 @@ if exists("&colorcolumn")
     set colorcolumn=100
 endif
 
-"""" Messages, Info, Status
+""" Messages, Info, Status
 set vb t_vb=                " Disable all bells.  I hate ringing/flashing.
 set confirm                 " Y-N-C prompt if closing with unsaved changes.
 set showcmd                 " Show incomplete normal mode commands as I type.
@@ -30,7 +29,7 @@ set shortmess+=a            " Use [+]/[RO]/[w] for modified/readonly/written.
 set ruler                   " Show some info, even without statuslines.
 set laststatus=2            " Always show statusline, even if only 1 window.
 
-"""" Tabs/Indent Levels
+""" Tabs/Indent Levels
 set tabstop=4               " <tab> inserts 4 spaces
 set shiftwidth=4            " but an indent level is 2 spaces wide.
 set softtabstop=4           " <BS> over an autoindent deletes both spaces.
@@ -39,12 +38,12 @@ set shiftround              " rounds indent to a multiple of shiftwidth
 set autoindent              " Keep indentation level from previous line
 set textwidth=79            " 
 
-"""" Command Line
+""" Command Line
 set history=1000            " Keep a very long command-line history.
 set wildmenu                " Menu completion in command mode on <Tab>
 set wildmode=full           " <Tab> cycles between all matching choices.
 
-"""" Per-Filetype Scripts
+""" Per-Filetype Scripts
 " NOTE: These define autocmds, so they should come before any other autocmds.
 "       That way, a later autocmd can override the result of one defined here.
 filetype on                 " Enable filetype detection,
@@ -87,11 +86,17 @@ def EvaluateCurrentRange():
 EOF
 endif
 
-"""" Display
+""" Display
 colorscheme darkmate
 "Invisible character colors
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
+
+""" OTHER SETTINGS
+" set <leader> as ,
+let mapleader = ","
+
+nnoremap <leader><space> :noh<cr>  " Empty highlight after search by leader - space
 
 "autocmd BufWritePre *.py normal m`:%s/\s\+$//e ``  " Trim Trailing Whitespace
 
@@ -120,8 +125,6 @@ let Tlist_File_Fold_Auto_Close = 1
 
 """ PYDOC path
 " let g:pydoc_cmd=/usr/bin/pydoc
-
-let mapleader = ","
 
  
 " ------------------------------------------------------------------------------
