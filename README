@@ -1,6 +1,3 @@
-omni complition Ctrl+x Ctrl+o
-snippets Tab
-:NERDtree
 
 snipmate
 taglist
@@ -14,19 +11,52 @@ syntax
 fast open
 
 installed exuberant-ctags -> TT, F4 = TlistToggle
+
+------------
+|   HELP   |
+------------
+:! command in shell
+FIXME   clear selection after search
+
+-----------------
+Buffers
+-----------------
+:bw - close buffer ?
+Alt + number  - move by buffer number
+Alt + .,  - moving through buffers
+
+-----------------
+Completion
+-----------------
+Tab - complete snippet
+Ctrl+x Ctrl+o - omni completion 
+
+-----------------
+Folding
+-----------------
 F - toggle all, f-toggle folding only here
 :TaskList
 
-
+------------------------
 # Check Python code
+------------------------
 :!pep8 %
 :!pyflakes %
 :!pylint %
 
 \pw - pydoc
 
-
+---------------
 NERDTREE:
+---------------
+:NERDtree
 F9 - open or hide NerdTree on path /mnt/admitad/var/www/
 q - close
 m - on file/dir to copy/dell/add child node/move
+
+
+--------------
+Indentation
+--------------
+<number>  Alt + arrows
+
