@@ -19,6 +19,9 @@ installed exuberant-ctags -> TT, F4 = TlistToggle
 :noh - clear selection after search
 Shift + e - execute python file
 * - highlight matched words under cursor
+% - Jump to matching {}, (), [], ...
+CTRL-a 	Increment number right of the cursor
+CTRL-x 	Decrement number right of the cursor
 
 -----------------
 Buffers
@@ -79,3 +82,34 @@ Leader button <,>
 ----------------
 :noh or ,<space> - clear selection after search
 
+
+
+----
+TOSEE
+----
+CTRL-v 	Visual select block mode
+
+    once you have rectangular block, you can remove block with 'd'
+    insert text in front of the block with capital 'I'
+    append text after the block with capital 'A'
+    change text with 'c'
+    cut text using 'x' and paste using 'p'
+    change text to single characters using 'R' 
+
+gq 	Word wrap - make text, comments look nicer
+ :ls 	List buffers
+ :b1 - :bn 	Switch to buffer n - :b5 - switch to buffer 5
+ :sbn 	Same as :b1 - :bn, but split
+ :CTRL-w q 	Close current buffer/window
+ :on 	Show only current buffer
+set wildmode=longest 	Tab clompletion behaves more like in emacs or zsh. To get the full list, press CTRL-D
+set autochdir 	Automatically cd to directory of the buffer. This is a great feature, but it only seems to work on certain VIM clients even though it is in the help file.
+set selection=exclusive 	Only select up to (not including) the character where cursor is
+CTRL-^ 	Switch buffer
+CTRL-w CTRL-^ 	Split and switch
+set path=/some/path/** 	Set internal find path to /some/path and all subdirectories
+ :find file 	Search for file in the path
+CTRL-] 	Jump to label
+CTRL-T 	Go back
+] CTRL-i 	Jump to file under cursor
+[ SHIFT-i 	Display all occurances of the word under the cursor in the file 
