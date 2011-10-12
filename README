@@ -22,6 +22,9 @@ Shift + e - execute python file
 % - Jump to matching {}, (), [], ...
 CTRL-a 	Increment number right of the cursor
 CTRL-x 	Decrement number right of the cursor
+CTRL-n and CTRL-p Complition
+~       Campitalize letter under cursor
+:%s/<what_to_replace>/<on_what_to_replace>/g
 
 -----------------
 Buffers
