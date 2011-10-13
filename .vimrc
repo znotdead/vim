@@ -68,7 +68,7 @@ filetype indent on
 " Folding based on indentation
 set foldmethod=indent
 " Wrap text after a certain number of characters
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h set textwidth=79
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h set textwidth=100
 
 if has("python")
 python << EOF
