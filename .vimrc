@@ -62,6 +62,7 @@ autocmd BufRead py set smartindent cinwords=if,elif,else,for,while,try,except,fi
 set encoding=utf-8 " Set the default file encoding to UTF-8
 " For full syntax highlighting:
 let python_highlight_all=1
+let python_highlight_space_errors=0
 syntax on
 " Automatically indent based on file type
 filetype indent on
