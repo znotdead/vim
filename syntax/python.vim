@@ -127,7 +127,7 @@ syn match   pythonFunction	"[a-zA-Z_][a-zA-Z0-9_]*" display contained
 syn keyword pythonRepeat	for while
 syn keyword pythonConditional	if elif else
 syn keyword pythonPreCondit	import from as
-syn keyword pythonException	try except finally
+syn keyword pythonStatement	try except finally
 syn keyword pythonOperator	and in is not or
 
 if !exists("python_print_as_function") || python_print_as_function == 0
@@ -371,7 +371,7 @@ if version >= 508 || !exists("did_python_syn_inits")
   HiLink pythonBuiltinObj	Structure
   HiLink pythonBuiltinFunc	Function
 
-  HiLink pythonExClass	Structure
+  HiLink pythonExClass	Exception
 
   delcommand HiLink
 endif
