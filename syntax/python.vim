@@ -112,6 +112,9 @@ if exists("python_highlight_all") && python_highlight_all != 0
   endif
 endif
 
+" znotdead custom
+syn keyword pythonReserved  self
+
 " Keywords
 syn keyword pythonStatement	break continue del
 syn keyword pythonStatement	exec return
@@ -132,7 +135,9 @@ if !exists("python_print_as_function") || python_print_as_function == 0
 endif
 
 " Decorators (new in Python 2.4)
-syn match   pythonDecorator	"@" display nextgroup=pythonDottedName skipwhite
+"syn match   pythonDecorator	"@" display nextgroup=pythonDottedName skipwhite
+" znotdead custom
+syn match pythonDecorator "^@.*$"
 syn match   pythonDottedName "[a-zA-Z_][a-zA-Z0-9_]*\(\.[a-zA-Z_][a-zA-Z0-9_]*\)*" display contained
 syn match   pythonDot        "\." display containedin=pythonDottedName
 
