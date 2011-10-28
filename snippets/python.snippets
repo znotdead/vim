@@ -3,6 +3,8 @@ snippet #!
 
 snippet imp
 	import ${1:module}
+snippet from
+    from ${1:module} import ${2}
 # Module Docstring
 snippet docs
 	'''
@@ -84,3 +86,5 @@ snippet ifmain
 # __magic__
 snippet _
 	__${1:init}__${2}
+snippet pdb
+	import pdb; pdb.set_trace()
