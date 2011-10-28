@@ -250,7 +250,8 @@ syn match   pythonBinError	"\<0[bB][01]*[2-9]\d*[lL]\=\>" display
 
 if exists("python_highlight_builtin_objs") && python_highlight_builtin_objs != 0
   " Builtin objects and types
-  syn keyword pythonBuiltinObj	True False Ellipsis None NotImplemented
+  syn keyword pythonBoolean	True False None
+  syn keyword pythonBuiltinObj NotImplemented Ellipsis
   syn keyword pythonBuiltinObj	__debug__ __doc__ __file__ __name__ __package__
 endif
 
@@ -369,6 +370,7 @@ if version >= 508 || !exists("did_python_syn_inits")
   HiLink pythonBinError		Error
 
   HiLink pythonBuiltinObj	Structure
+  HiLink pythonBoolean  	Boolean
   HiLink pythonBuiltinFunc	Function
 
   HiLink pythonExClass	Exception
