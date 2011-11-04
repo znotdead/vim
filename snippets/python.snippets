@@ -1,6 +1,5 @@
 snippet #!
 	#!/usr/bin/python
-
 snippet imp
 	import ${1:module}
 snippet from
@@ -84,7 +83,13 @@ snippet ifmain
 	if __name__ == '__main__':
 		${1:main()}
 # __magic__
-snippet _
+snippet __
 	__${1:init}__${2}
 snippet pdb
 	import pdb; pdb.set_trace()
+snippet utf
+	#-*- coding: utf-8 -*-
+
+# Django snippets
+snippet _
+	from django.utils.translation import ugettext_lazy as _
