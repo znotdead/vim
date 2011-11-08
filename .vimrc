@@ -222,3 +222,7 @@ nmap <M-Down> ]e
 " Bubble multiple lines
 vmap <M-Up> [egv
 vmap <M-Down> ]egv
+
+" insert empty lines in normal mode
+nnoremap <Enter> o<ESC>
+"nnoremap <M-Enter> O<ESC>
