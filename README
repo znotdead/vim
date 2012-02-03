@@ -26,6 +26,14 @@ CTRL-n and CTRL-p Complition
 ~       Campitalize letter under cursor
 :%s/<what_to_replace>/<on_what_to_replace>/gc - ask on each replacement
 
+CTRL-v 	Visual select block mode
+
+    once you have rectangular block, you can remove block with 'd'
+    insert text in front of the block with capital 'I'
+    append text after the block with capital 'A'
+    change text with 'c'
+    cut text using 'x' and paste using 'p'
+    change text to single characters using 'R' 
 -----------------
 Buffers
 -----------------
@@ -90,14 +98,7 @@ Leader button <,>
 ----
 TOSEE
 ----
-CTRL-v 	Visual select block mode
 
-    once you have rectangular block, you can remove block with 'd'
-    insert text in front of the block with capital 'I'
-    append text after the block with capital 'A'
-    change text with 'c'
-    cut text using 'x' and paste using 'p'
-    change text to single characters using 'R' 
 
 gq 	Word wrap - make text, comments look nicer
  :ls 	List buffers
