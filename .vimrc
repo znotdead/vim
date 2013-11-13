@@ -1,3 +1,4 @@
+execute pathogen#infect()
 " Stop behaving like vi; vim enhancements are better
 set nocompatible
 

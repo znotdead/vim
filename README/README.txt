@@ -1,3 +1,10 @@
+To install plugins:
+apt-get install git ctags
+cd bundle && while read repo; do git clone $repo; done < ../installed_plugins.txt 
+ln -s ~/.vim/.vimrc ~
+ln -s ~/.vim/.gvimrc ~
+
+
 
 snipmate
 taglist
