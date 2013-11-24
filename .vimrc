@@ -54,7 +54,7 @@ syntax on                   " and turn on per-filetype syntax highlighting.
 
 " treat html files as django templates
 so $HOME/.vim/myfiletypes.vim
-autocmd BufRead *.html set filetype=htmldjango
+autocmd BufRead,BufNewFile *.html set filetype=htmldjango
 
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd BufRead *.py set makeprg=python\ -c\ \"import\ py_compile,sys;\ sys.stderr=sys.stdout;\ py_compile.compile(r'%')\"
